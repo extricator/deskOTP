@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=deskOTP
+Exec=deskOTP
+Icon=deskotp
+Categories=Utility;Security;
+StartupWMClass=deskOTP
+Terminal=false
+Comment=Desktop OTP authenticator with multi-app backup import

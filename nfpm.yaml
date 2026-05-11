@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://nfpm.goreleaser.com/schema.json
+
+name: "deskotp"
+arch: "amd64"
+platform: "linux"
+version: "${VERSION}"
+maintainer: "deskOTP contributors"
+description: |
+  Desktop OTP authenticator with multi-app backup import.
+  Displays rotating one-time passwords with click-to-copy.
+homepage: "https://github.com/extricator/deskOTP"
+license: "GPL-3.0-only"
+
+contents:
+  - src: build/bin/deskOTP
+    dst: /usr/bin/deskOTP
+  - src: build/linux/deskotp.desktop
+    dst: /usr/share/applications/deskotp.desktop
+  - src: build/linux/icons/48x48/deskotp.png
+    dst: /usr/share/icons/hicolor/48x48/apps/deskotp.png
+  - src: build/linux/icons/128x128/deskotp.png
+    dst: /usr/share/icons/hicolor/128x128/apps/deskotp.png
+  - src: build/linux/icons/256x256/deskotp.png
+    dst: /usr/share/icons/hicolor/256x256/apps/deskotp.png
+  - src: build/linux/io.github.deskotp.deskOTP.metainfo.xml
+    dst: /usr/share/metainfo/io.github.deskotp.deskOTP.metainfo.xml
+
+overrides:
+  deb:
+    depends:
+      - libwebkit2gtk-4.1-0
+      - libgtk-3-0
+    scripts:
+      postinstall: scripts/linux-postinstall.sh
+      postremove: scripts/linux-postremove.sh
+  rpm:
+    depends:
+      - webkit2gtk4.1
+      - gtk3
+    scripts:
+      postinstall: scripts/linux-postinstall.sh
+      postremove: scripts/linux-postremove.sh

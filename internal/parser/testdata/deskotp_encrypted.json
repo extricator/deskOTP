@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "header": {
+    "slots": [
+      {
+        "uuid": "c2dea44c-a81c-497d-880d-7ece23d42153",
+        "type": 1,
+        "key": "e4c319852c3118fe481309fe56395ac2602b724d106d9ec1ab6bea537b840d90",
+        "key_params": {
+          "nonce": "a6214c7b8417ca32bd3cbb1b",
+          "tag": "fd437bd43b4a6cf701d023e08e543841"
+        },
+        "n": 32768,
+        "r": 8,
+        "p": 1,
+        "salt": "8ba2363f46b9061f94f53a471a024ce79eea9babb042ed1f23d36202a5128771"
+      }
+    ],
+    "params": {
+      "nonce": "7d6e60c24b2f2686c2e1162f",
+      "tag": "4029033e5e000dcd1030e10059b9a990"
+    }
+  },
+  "data": "VJp0TRLnmkdCXGQwXOhnIpkJMUIa4/RB8hCV2NAFud5p6IKeir4Cwiny0aL5EmsNrgTBamOo5kUUpIATnbPOijGasIub6Z+3jYHw4o0KU+U2uibWrXzynpQ+YzD4SocXobr9SjIHvMG/jZIG5KLYs1EhWNJi+dlxirKXbfrmpf5qQ0+GyTENef7pIA+CgQnZhQYDOAf14Z6kfILggcCPcIexcOi2Y0Acm6FLJur1J0R2iK+/A8585y12glXMOpUpJboA/Nhf2xoV3MTuKBxFS4NlXdAnimcEBg16OhgAxjXPMSWMj0Y8JQH/m6UMe+aaScwvvRGnCNTY9n9jRQeUWzfsoCVDWEMSHS3OkKfKN4HdAjLG4Zc+FMap3Bb0+e4piC9wLl4LQ+yHpGs3M6B98yevLWnoFwrAT55kjU2Zd9OqlJYSd6lWy06CLR7jx42eZDqxooJ9+15p8Ohwhkh6017drjJcE83L53YcwIj6LArjlwpau6JWKyaDjtV1UyBN0x4z3MaCTyDDfa1sx1uPnwtrW9CCbEgIyu6xJV6XZoNUXs+tMD22g6dh+nbKeX2Ni9CN+Qf4Fs5XdKNx4sksa4IVmUkAWHYJZIaZGrsxwh52SNCRiQPW4YU6IYGrGKWUs1aUfIxgGAwzNyckNH18b5FzA4Xbad+YmyzIks1vL2r8Z/wq+34/tHHPUoSy62wMaWmQsxwKwDT7CxxSMk5EGCaHJ0LgMZ7+iKHZ8IcBSCc3QWnFB3B5CvUxER7RPFLwGtPvunPpWwNRTZeYKiuzy3tLksswA0bczj3VqSHlXsLoiKiIpM2gKmxgDQp8xo0="
+}

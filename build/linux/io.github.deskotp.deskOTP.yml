@@ -1,0 +1,32 @@
+app-id: io.github.deskotp.deskOTP
+runtime: org.gnome.Platform
+runtime-version: '47'
+sdk: org.gnome.Sdk
+command: deskOTP
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  # Allow reading user-selected files (portal returns host paths that
+  # os.ReadFile needs access to; host:ro is the standard Flatpak approach
+  # for apps that import user files via the portal file chooser)
+  - --filesystem=host:ro
+  # Expose host cursor theme so WebKit pointer/hand cursors match the desktop
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
+
+modules:
+  - name: deskotp
+    buildsystem: simple
+    build-commands:
+      - install -D build/bin/deskOTP /app/bin/deskOTP
+      - sed 's/^Icon=deskotp$/Icon=io.github.deskotp.deskOTP/' build/linux/deskotp.desktop > deskotp-flatpak.desktop
+      - install -Dm644 deskotp-flatpak.desktop /app/share/applications/io.github.deskotp.deskOTP.desktop
+      - install -Dm644 build/linux/icons/48x48/deskotp.png /app/share/icons/hicolor/48x48/apps/io.github.deskotp.deskOTP.png
+      - install -Dm644 build/linux/icons/128x128/deskotp.png /app/share/icons/hicolor/128x128/apps/io.github.deskotp.deskOTP.png
+      - install -Dm644 build/linux/icons/256x256/deskotp.png /app/share/icons/hicolor/256x256/apps/io.github.deskotp.deskOTP.png
+      - install -Dm644 build/linux/io.github.deskotp.deskOTP.metainfo.xml /app/share/metainfo/io.github.deskotp.deskOTP.metainfo.xml
+    sources:
+      - type: dir
+        path: ../..

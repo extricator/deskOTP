@@ -1,0 +1,369 @@
+{
+  "github, inc.": "github",
+  "github.com": "github",
+  "github, inc": "github",
+
+  "google llc": "google",
+  "google.com": "google",
+  "google inc": "google",
+  "google inc.": "google",
+  "accounts.google.com": "google",
+
+  "amazon web services": "amazon-web-services",
+  "amazon.com": "amazon",
+  "amazon.co.uk": "amazon",
+  "amazon.de": "amazon",
+  "amazon.ca": "amazon",
+
+  "microsoft corporation": "microsoft",
+  "microsoft 365": "microsoft",
+  "live.com": "microsoft",
+  "outlook.com": "microsoft",
+  "hotmail.com": "microsoft",
+  "microsoft account": "microsoft",
+  "office 365": "microsoft",
+
+  "facebook": "facebook",
+  "fb": "facebook",
+  "facebook.com": "facebook",
+  "meta platforms": "meta",
+  "meta platforms, inc.": "meta",
+
+  "instagram": "instagram",
+  "instagram.com": "instagram",
+
+  "twitter": "twitter",
+  "twitter.com": "twitter",
+  "x.com": "twitter",
+  "twitter, inc.": "twitter",
+
+  "apple id": "apple",
+  "icloud": "apple",
+  "appleid.apple.com": "apple",
+  "apple inc.": "apple",
+
+  "protonmail": "proton",
+  "proton mail": "proton",
+  "protonvpn": "proton",
+  "proton.me": "proton",
+  "protonmail.com": "proton",
+
+  "epic games store": "epic-games",
+  "epicgames": "epic-games",
+  "epicgames.com": "epic-games",
+
+  "ea.com": "electronic-arts",
+  "electronic arts": "electronic-arts",
+
+  "battle.net": "battle-net",
+  "activision": "battle-net",
+  "activision blizzard": "battle-net",
+  "blizzard entertainment": "battle-net",
+
+  "playstation network": "playstation",
+  "psn": "playstation",
+  "sony": "playstation",
+
+  "valve": "steam",
+  "steampowered": "steam",
+  "steampowered.com": "steam",
+  "steam community": "steam",
+
+  "coinbase.com": "coinbase",
+  "coinbase pro": "coinbase",
+
+  "binance.com": "binance",
+  "binance.us": "binance",
+
+  "atlassian.com": "atlassian",
+  "atlassian cloud": "atlassian",
+
+  "digitalocean.com": "digitalocean",
+  "digital ocean": "digitalocean",
+
+  "cloudflare.com": "cloudflare",
+  "cloudflare, inc.": "cloudflare",
+
+  "1password.com": "1password",
+  "one password": "1password",
+
+  "bitwarden.com": "bitwarden",
+  "bitwarden, inc.": "bitwarden",
+
+  "lastpass.com": "lastpass",
+
+  "dashlane.com": "dashlane",
+
+  "nordvpn.com": "nordvpn",
+  "nord vpn": "nordvpn",
+
+  "expressvpn.com": "expressvpn",
+  "express vpn": "expressvpn",
+
+  "private internet access": "private-internet-access",
+  "privateinternetaccess": "private-internet-access",
+
+  "surfshark.com": "surfshark",
+
+  "twitch.tv": "twitch",
+
+  "reddit.com": "reddit",
+
+  "linkedin.com": "linkedin",
+  "linkedin corporation": "linkedin",
+
+  "discord.com": "discord",
+  "discord inc.": "discord",
+  "discordapp.com": "discord",
+
+  "slack.com": "slack",
+  "slack technologies": "slack",
+
+  "dropbox.com": "dropbox",
+
+  "stripe.com": "stripe",
+
+  "paypal.com": "paypal",
+  "paypal, inc.": "paypal",
+
+  "shopify.com": "shopify",
+  "myshopify.com": "shopify",
+
+  "heroku.com": "heroku",
+  "hetzner.com": "hetzner",
+  "hetzner online": "hetzner",
+
+  "docker.com": "docker",
+  "docker hub": "docker",
+  "hub.docker.com": "docker",
+
+  "gitlab.com": "gitlab",
+
+  "npm.com": "npm",
+  "npmjs.com": "npm",
+  "npmjs.org": "npm",
+
+  "jetbrains.com": "jetbrains",
+  "jetbrains s.r.o.": "jetbrains",
+
+  "figma.com": "figma",
+
+  "notion.so": "notion",
+  "notion.com": "notion",
+
+  "hashicorp.com": "hashicorp",
+  "hashicorp vault": "hashicorp",
+  "hcp vault": "hashicorp",
+
+  "terraform cloud": "terraform",
+  "app.terraform.io": "terraform",
+
+  "okta.com": "okta",
+
+  "auth0.com": "auth0",
+
+  "sentry.io": "sentry",
+
+  "postmarkapp.com": "postmark",
+  "postmark.com": "postmark",
+
+  "sendgrid.com": "sendgrid",
+  "twilio sendgrid": "sendgrid",
+  "twilio": "twilio",
+
+  "mailchimp.com": "mailchimp",
+
+  "hubspot.com": "hubspot",
+
+  "salesforce.com": "salesforce",
+
+  "oracle.com": "oracle",
+
+  "ovhcloud": "ovh",
+  "ovh.com": "ovh",
+
+  "scaleway.com": "scaleway",
+
+  "upcloud.com": "upcloud",
+
+  "contabo.com": "contabo",
+
+  "hostinger.com": "hostinger",
+
+  "ionos.com": "ionos",
+  "1and1": "ionos",
+  "1&1": "ionos",
+
+  "namecheap.com": "namecheap",
+
+  "godaddy.com": "godaddy",
+
+  "hover.com": "hover",
+
+  "porkbun.com": "porkbun",
+
+  "gandi.net": "gandi",
+
+  "backblaze.com": "backblaze",
+  "backblaze b2": "backblaze",
+
+  "wasabi.com": "wasabi",
+  "wasabi technologies": "wasabi",
+
+  "synology.com": "synology",
+  "synology dsm": "synology",
+
+  "qnap.com": "qnap",
+
+  "proxmox.com": "proxmox",
+  "proxmox ve": "proxmox",
+
+  "truenas.com": "truenas",
+  "freenas": "truenas",
+
+  "unraid.net": "unraid",
+
+  "ubiquiti.com": "ubiquiti",
+  "ubiquiti networks": "ubiquiti",
+  "ubnt": "ubiquiti",
+  "unifi": "ubiquiti",
+
+  "ubisoft.com": "ubisoft",
+  "ubisoft entertainment": "ubisoft",
+  "uplay": "ubisoft",
+
+  "nintendo.com": "nintendo",
+  "nintendo account": "nintendo",
+
+  "ebay.com": "ebay",
+
+  "etsy.com": "etsy",
+
+  "squarespace.com": "squarespace",
+
+  "wix.com": "wix",
+
+  "wordpress.com": "wordpress",
+  "wordpress.org": "wordpress",
+
+  "nextcloud.com": "nextcloud",
+
+  "plex.tv": "plex",
+
+  "fly.io": "fly-io",
+
+  "render.com": "render",
+
+  "railway.app": "railway",
+
+  "planetscale.com": "planetscale",
+
+  "mongodb.com": "mongodb",
+  "mongodb atlas": "mongodb",
+
+  "rackspace.com": "rackspace-technology",
+  "rackspace technology": "rackspace-technology",
+
+  "crowdstrike.com": "crowdstrike",
+
+  "sophos.com": "sophos",
+
+  "cisco.com": "cisco",
+  "cisco systems": "cisco",
+
+  "samsung.com": "samsung",
+  "samsung account": "samsung",
+
+  "lenovo.com": "lenovo",
+
+  "hp.com": "hp",
+  "hewlett packard": "hp",
+  "hewlett-packard": "hp",
+
+  "nvidia.com": "nvidia",
+
+  "ring.com": "ring",
+  "ring doorbell": "ring",
+
+  "robinhood.com": "robinhood",
+  "robinhood markets": "robinhood",
+
+  "kraken.com": "kraken",
+
+  "gemini.com": "gemini",
+
+  "t-mobile.com": "t-mobile",
+
+  "tp-link.com": "tp-link",
+  "tplink": "tp-link",
+
+  "netlify.com": "netlify",
+  "netlify.app": "netlify",
+
+  "healthchecks.io": "healthchecks",
+
+  "uptime kuma": "uptime-kuma",
+  "uptimekuma": "uptime-kuma",
+
+  "zoho.com": "zoho",
+  "zoho corporation": "zoho",
+
+  "sap.com": "sap",
+
+  "tuta.com": "tuta",
+  "tuta": "tuta",
+  "tutanota.com": "tuta",
+  "tutanota": "tuta",
+
+  "wyze.com": "wyze",
+
+  "airtable.com": "airtable",
+
+  "asana.com": "asana",
+
+  "azure": "azure",
+  "azure devops": "azure",
+  "portal.azure.com": "azure",
+  "microsoft azure": "azure",
+
+  "basecamp.com": "basecamp",
+  "3.basecamp.com": "basecamp",
+
+  "bitdefender.com": "bitdefender",
+  "bitdefender central": "bitdefender",
+
+  "brave.com": "brave",
+  "brave browser": "brave",
+
+  "buffer.com": "buffer",
+
+  "mega.nz": "mega",
+  "mega.co.nz": "mega",
+  "mega limited": "mega",
+
+  "pinterest.com": "pinterest",
+
+  "roblox.com": "roblox",
+
+  "snapchat.com": "snapchat",
+  "snap inc.": "snapchat",
+  "snap inc": "snapchat",
+
+  "tiktok.com": "tiktok",
+  "tik tok": "tiktok",
+
+  "trello.com": "trello",
+
+  "tumblr.com": "tumblr",
+
+  "uber.com": "uber",
+  "uber eats": "uber",
+
+  "yahoo.com": "yahoo",
+  "yahoo mail": "yahoo",
+  "yahoo.co.jp": "yahoo",
+
+  "zoom.us": "zoom",
+  "zoom.com": "zoom",
+  "zoom video": "zoom"
+}

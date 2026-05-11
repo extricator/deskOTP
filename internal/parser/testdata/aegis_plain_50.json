@@ -1,0 +1,727 @@
+{
+    "version": 1,
+    "header": {
+        "slots": null,
+        "params": null
+    },
+    "db": {
+        "version": 1,
+        "entries": [
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0001-4000-8000-000000000001",
+                "name": "user@example.com",
+                "issuer": "GitHub",
+                "icon": null,
+                "info": {
+                    "secret": "JBSWY3DPEHPK3PXP26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0002-4000-8000-000000000002",
+                "name": "john.doe@gmail.com",
+                "issuer": "Google",
+                "icon": null,
+                "info": {
+                    "secret": "MFRGGZDFMZTWQ2LK26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0003-4000-8000-000000000003",
+                "name": "alice@company.com",
+                "issuer": "AWS",
+                "icon": null,
+                "info": {
+                    "secret": "NBSWY3DPEHPK3PXP36BQWTCPKN",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0004-4000-8000-000000000004",
+                "name": "bob",
+                "issuer": "Slack",
+                "icon": null,
+                "info": {
+                    "secret": "OBSWYADPFHPK4PXP46CQWTCPKO",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0005-4000-8000-000000000005",
+                "name": "carol@discord.com",
+                "issuer": "Discord",
+                "icon": null,
+                "info": {
+                    "secret": "PBSWY3EPGHPK5PXP56DQWTCPKP",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0006-4000-8000-000000000006",
+                "name": "dave@dropbox.com",
+                "issuer": "Dropbox",
+                "icon": null,
+                "info": {
+                    "secret": "QBSWY3FPHHPK6PXP66EQWTCPKQ",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0007-4000-8000-000000000007",
+                "name": "eve@twitter.com",
+                "issuer": "Twitter",
+                "icon": null,
+                "info": {
+                    "secret": "RBSWY3GPIHPK7PXP76FQWTCPKR",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0008-4000-8000-000000000008",
+                "name": "frank@facebook.com",
+                "issuer": "Facebook",
+                "icon": null,
+                "info": {
+                    "secret": "SBSWY3HPJHPK8PXP86GQWTCPKS",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0009-4000-8000-000000000009",
+                "name": "grace@microsoft.com",
+                "issuer": "Microsoft",
+                "icon": null,
+                "info": {
+                    "secret": "TBSWY3IPKHPK9PXP96HQWTCPKT",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0010-4000-8000-000000000010",
+                "name": "henry@apple.com",
+                "issuer": "Apple",
+                "icon": null,
+                "info": {
+                    "secret": "UBSWY3JPLHPKAAPXA6IQWTCPKU",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0011-4000-8000-000000000011",
+                "name": "iris@netflix.com",
+                "issuer": "Netflix",
+                "icon": null,
+                "info": {
+                    "secret": "VBSWY3KPMHPKBBPXB6JQWTCPKV",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0012-4000-8000-000000000012",
+                "name": "jack@spotify.com",
+                "issuer": "Spotify",
+                "icon": null,
+                "info": {
+                    "secret": "WBSWY3LPNHPKCCPXC6KQWTCPKW",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0013-4000-8000-000000000013",
+                "name": "kate@linkedin.com",
+                "issuer": "LinkedIn",
+                "icon": null,
+                "info": {
+                    "secret": "XBSWY3MPOHPKDDPXD6LQWTCPKX",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0014-4000-8000-000000000014",
+                "name": "liam@cloudflare.com",
+                "issuer": "Cloudflare",
+                "icon": null,
+                "info": {
+                    "secret": "YBSWY3NPPPHPKEEPXE6MQWTCPKY",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0015-4000-8000-000000000015",
+                "name": "mia@gitlab.com",
+                "issuer": "GitLab",
+                "icon": null,
+                "info": {
+                    "secret": "ZBSWY3OPQHPKFFPXF6NQWTCPKZ",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0016-4000-8000-000000000016",
+                "name": "noah@digitalocean.com",
+                "issuer": "DigitalOcean",
+                "icon": null,
+                "info": {
+                    "secret": "2BSWY3PPRHPKGGPXG6OQWTCP2A",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0017-4000-8000-000000000017",
+                "name": "olivia@heroku.com",
+                "issuer": "Heroku",
+                "icon": null,
+                "info": {
+                    "secret": "3BSWY3QPSHPKHHPXH6PQWTCP3B",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 60
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0018-4000-8000-000000000018",
+                "name": "peter@bitbucket.com",
+                "issuer": "Bitbucket",
+                "icon": null,
+                "info": {
+                    "secret": "4BSWY3RPTHPKIIPXI6QQWTCP4C",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0019-4000-8000-000000000019",
+                "name": "quinn@stripe.com",
+                "issuer": "Stripe",
+                "icon": null,
+                "info": {
+                    "secret": "5BSWY3SPUHPKJJPXJ6RQWTCP5D",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0020-4000-8000-000000000020",
+                "name": "rachel@paypal.com",
+                "issuer": "PayPal",
+                "icon": null,
+                "info": {
+                    "secret": "6BSWY3TPVHPKKKPXK6SQWTCP6E",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0021-4000-8000-000000000021",
+                "name": "sam@twilio.com",
+                "issuer": "Twilio",
+                "icon": null,
+                "info": {
+                    "secret": "7BSWY3UPWHPKLLPXL6TQWTCP7F",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0022-4000-8000-000000000022",
+                "name": "tina@sendgrid.com",
+                "issuer": "SendGrid",
+                "icon": null,
+                "info": {
+                    "secret": "JBSWY3DPEHPK3PXP26BQWTCPKM",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0023-4000-8000-000000000023",
+                "name": "uma@npm.com",
+                "issuer": "npm",
+                "icon": null,
+                "info": {
+                    "secret": "MFRGGZDFMZTWQ2LK26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0024-4000-8000-000000000024",
+                "name": "victor@docker.com",
+                "issuer": "Docker",
+                "icon": null,
+                "info": {
+                    "secret": "NBSWY3DPEHPK3PXP36BQWTCPKN",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0025-4000-8000-000000000025",
+                "name": "wendy@vercel.com",
+                "issuer": "Vercel",
+                "icon": null,
+                "info": {
+                    "secret": "OBSWYADPFHPK4PXP46CQWTCPKO",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0026-4000-8000-000000000026",
+                "name": "xavier@netlify.com",
+                "issuer": "Netlify",
+                "icon": null,
+                "info": {
+                    "secret": "PBSWY3EPGHPK5PXP56DQWTCPKP",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0027-4000-8000-000000000027",
+                "name": "yara@cloudinary.com",
+                "issuer": "Cloudinary",
+                "icon": null,
+                "info": {
+                    "secret": "QBSWY3FPHHPK6PXP66EQWTCPKQ",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0028-4000-8000-000000000028",
+                "name": "zoe@datadog.com",
+                "issuer": "Datadog",
+                "icon": null,
+                "info": {
+                    "secret": "RBSWY3GPIHPK7PXP76FQWTCPKR",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0029-4000-8000-000000000029",
+                "name": "alex@sentry.io",
+                "issuer": "Sentry",
+                "icon": null,
+                "info": {
+                    "secret": "SBSWY3HPJHPK8PXP86GQWTCPKS",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0030-4000-8000-000000000030",
+                "name": "blake@pagerduty.com",
+                "issuer": "PagerDuty",
+                "icon": null,
+                "info": {
+                    "secret": "TBSWY3IPKHPK9PXP96HQWTCPKT",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0031-4000-8000-000000000031",
+                "name": "casey@jira.com",
+                "issuer": "Atlassian",
+                "icon": null,
+                "info": {
+                    "secret": "UBSWY3JPLHPKAAPXA6IQWTCPKU",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0032-4000-8000-000000000032",
+                "name": "dana@notion.so",
+                "issuer": "Notion",
+                "icon": null,
+                "info": {
+                    "secret": "VBSWY3KPMHPKBBPXB6JQWTCPKV",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0033-4000-8000-000000000033",
+                "name": "eli@figma.com",
+                "issuer": "Figma",
+                "icon": null,
+                "info": {
+                    "secret": "WBSWY3LPNHPKCCPXC6KQWTCPKW",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0034-4000-8000-000000000034",
+                "name": "fiona@linear.app",
+                "issuer": "Linear",
+                "icon": null,
+                "info": {
+                    "secret": "XBSWY3MPOHPKDDPXD6LQWTCPKX",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0035-4000-8000-000000000035",
+                "name": "gus@zoom.us",
+                "issuer": "Zoom",
+                "icon": null,
+                "info": {
+                    "secret": "ZBSWY3OPQHPKFFPXF6NQWTCPKZ",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0036-4000-8000-000000000036",
+                "name": "helen@shopify.com",
+                "issuer": "Shopify",
+                "icon": null,
+                "info": {
+                    "secret": "2BSWY3PPRHPKGGPXG6OQWTCP2A",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0037-4000-8000-000000000037",
+                "name": "ivan@protonmail.com",
+                "issuer": "ProtonMail",
+                "icon": null,
+                "info": {
+                    "secret": "3BSWY3QPSHPKHHPXH6PQWTCP3B",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0038-4000-8000-000000000038",
+                "name": "julia@bitwarden.com",
+                "issuer": "Bitwarden",
+                "icon": null,
+                "info": {
+                    "secret": "4BSWY3RPTHPKIIPXI6QQWTCP4C",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0039-4000-8000-000000000039",
+                "name": "karl@1password.com",
+                "issuer": "1Password",
+                "icon": null,
+                "info": {
+                    "secret": "5BSWY3SPUHPKJJPXJ6RQWTCP5D",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0040-4000-8000-000000000040",
+                "name": "luna@lastpass.com",
+                "issuer": "LastPass",
+                "icon": null,
+                "info": {
+                    "secret": "6BSWY3TPVHPKKKPXK6SQWTCP6E",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0041-4000-8000-000000000041",
+                "name": "marc@reddit.com",
+                "issuer": "Reddit",
+                "icon": null,
+                "info": {
+                    "secret": "7BSWY3UPWHPKLLPXL6TQWTCP7F",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0042-4000-8000-000000000042",
+                "name": "nina@twitch.tv",
+                "issuer": "Twitch",
+                "icon": null,
+                "info": {
+                    "secret": "JBSWY3DPEHPK3PXP26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0043-4000-8000-000000000043",
+                "name": "omar@adobe.com",
+                "issuer": "Adobe",
+                "icon": null,
+                "info": {
+                    "secret": "MFRGGZDFMZTWQ2LK26BQWTCPKM",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0044-4000-8000-000000000044",
+                "name": "pam@salesforce.com",
+                "issuer": "Salesforce",
+                "icon": null,
+                "info": {
+                    "secret": "NBSWY3DPEHPK3PXP36BQWTCPKN",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "totp",
+                "uuid": "a1b2c3d4-0045-4000-8000-000000000045",
+                "name": "rory@hubspot.com",
+                "issuer": "HubSpot",
+                "icon": null,
+                "info": {
+                    "secret": "OBSWYADPFHPK4PXP46CQWTCPKO",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "period": 30
+                }
+            },
+            {
+                "type": "hotp",
+                "uuid": "a1b2c3d4-0046-4000-8000-000000000046",
+                "name": "sarah@example.com",
+                "issuer": "Issuu",
+                "icon": null,
+                "info": {
+                    "secret": "YOOMIXWS5GN6RTBPUFFWKTW5M4",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "counter": 1
+                }
+            },
+            {
+                "type": "hotp",
+                "uuid": "a1b2c3d4-0047-4000-8000-000000000047",
+                "name": "thomas@example.com",
+                "issuer": "Air Canada",
+                "icon": null,
+                "info": {
+                    "secret": "KUVJJOM753IHTNDSZVCNKL7GII",
+                    "algo": "SHA256",
+                    "digits": 7,
+                    "counter": 50
+                }
+            },
+            {
+                "type": "hotp",
+                "uuid": "a1b2c3d4-0048-4000-8000-000000000048",
+                "name": "ursula@example.com",
+                "issuer": "Bank of America",
+                "icon": null,
+                "info": {
+                    "secret": "5VAML3X35THCEBVRLV24CGBKOY",
+                    "algo": "SHA512",
+                    "digits": 8,
+                    "counter": 100
+                }
+            },
+            {
+                "type": "hotp",
+                "uuid": "a1b2c3d4-0049-4000-8000-000000000049",
+                "name": "vera@example.com",
+                "issuer": "Chase",
+                "icon": null,
+                "info": {
+                    "secret": "YOOMIXWS5GN6RTBPUFFWKTW5M4",
+                    "algo": "SHA1",
+                    "digits": 6,
+                    "counter": 25
+                }
+            },
+            {
+                "type": "hotp",
+                "uuid": "a1b2c3d4-0050-4000-8000-000000000050",
+                "name": "will@example.com",
+                "issuer": "Coinbase",
+                "icon": null,
+                "info": {
+                    "secret": "KUVJJOM753IHTNDSZVCNKL7GII",
+                    "algo": "SHA256",
+                    "digits": 6,
+                    "counter": 10
+                }
+            },
+            {
+                "type": "steam",
+                "uuid": "a1b2c3d4-0051-4000-8000-000000000051",
+                "name": "gamer1",
+                "issuer": "Steam",
+                "icon": null,
+                "info": {
+                    "secret": "JRZCL47CMXVOQMNPZR2F7J4RGI",
+                    "algo": "SHA1",
+                    "digits": 5,
+                    "period": 30
+                }
+            },
+            {
+                "type": "steam",
+                "uuid": "a1b2c3d4-0052-4000-8000-000000000052",
+                "name": "gamer2",
+                "issuer": "Steam",
+                "icon": null,
+                "info": {
+                    "secret": "JBSWY3DPEHPK3PXP26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 5,
+                    "period": 30
+                }
+            },
+            {
+                "type": "steam",
+                "uuid": "a1b2c3d4-0053-4000-8000-000000000053",
+                "name": "gamer3",
+                "issuer": "Steam",
+                "icon": null,
+                "info": {
+                    "secret": "MFRGGZDFMZTWQ2LK26BQWTCPKM",
+                    "algo": "SHA1",
+                    "digits": 5,
+                    "period": 30
+                }
+            },
+            {
+                "type": "steam",
+                "uuid": "a1b2c3d4-0054-4000-8000-000000000054",
+                "name": "gamer4",
+                "issuer": "Steam",
+                "icon": null,
+                "info": {
+                    "secret": "NBSWY3DPEHPK3PXP36BQWTCPKN",
+                    "algo": "SHA1",
+                    "digits": 5,
+                    "period": 30
+                }
+            },
+            {
+                "type": "steam",
+                "uuid": "a1b2c3d4-0055-4000-8000-000000000055",
+                "name": "gamer5",
+                "issuer": "Steam",
+                "icon": null,
+                "info": {
+                    "secret": "OBSWYADPFHPK4PXP46CQWTCPKO",
+                    "algo": "SHA1",
+                    "digits": 5,
+                    "period": 30
+                }
+            }
+        ]
+    }
+}

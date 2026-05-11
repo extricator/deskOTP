@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="deskOTP — desktop OTP authenticator for Linux">
+  <title>deskOTP</title>
+  <link rel="icon" type="image/png" href="assets/appicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <img class="hero-icon" src="assets/appicon.png" alt="deskOTP icon" width="128" height="128">
+    <h1>deskOTP</h1>
+    <p class="hero-tagline">
+      A desktop OTP authenticator that imports backup files from phone authenticator apps
+      and displays rotating codes on your desktop.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://github.com/extricator/deskOTP/releases/latest">Download</a>
+      <a class="btn btn-secondary" href="https://github.com/extricator/deskOTP">View Source</a>
+    </div>
+  </section>
+
+  <!-- TODO: Add app screenshot(s) here before publishing -->
+  <figure class="screenshot-placeholder" style="display:none;">
+    <img src="" alt="deskOTP main view">
+    <figcaption>Main view with rotating TOTP codes</figcaption>
+  </figure>
+
+  <!-- ── How It Works ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <ol class="steps-list">
+        <li>Import a backup file from your phone's authenticator app</li>
+        <li>Codes appear on your desktop, rotating every 30 seconds</li>
+        <li>Click any code to copy it to your clipboard, ready to paste</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Features ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>16 Import Formats</h3>
+          <p>Aegis, AndOTP, Authy, Google Authenticator, 2FAS, and more</p>
+        </div>
+        <div class="feature-card">
+          <h3>OTP Types</h3>
+          <p>TOTP, HOTP, and Steam Guard</p>
+        </div>
+        <div class="feature-card">
+          <h3>Vault Encryption</h3>
+          <p>AES-256-GCM encryption for stored OTP secrets</p>
+        </div>
+        <div class="feature-card">
+          <h3>App Lock</h3>
+          <p>System authentication with configurable auto-lock timeout</p>
+        </div>
+        <div class="feature-card">
+          <h3>800+ Brand Icons</h3>
+          <p>Automatic issuer matching from aegis-icons</p>
+        </div>
+        <div class="feature-card">
+          <h3>Click to Copy</h3>
+          <p>One-click code copying, ready to paste</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Supported Formats ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Supported Formats</h2>
+      <ul class="format-grid">
+        <li>Aegis</li>
+        <li>AndOTP</li>
+        <li>Authy</li>
+        <li>Battle.net Authenticator</li>
+        <li>Bitwarden</li>
+        <li>deskOTP</li>
+        <li>Duo</li>
+        <li>FreeOTP</li>
+        <li>FreeOTP+</li>
+        <li>Google Authenticator</li>
+        <li>Proton Pass</li>
+        <li>Steam Guard</li>
+        <li>Stratum (Authenticator Pro)</li>
+        <li>TOTP Authenticator</li>
+        <li>2FAS</li>
+        <li>WinAuth</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Install ── -->
+  <section class="section install-section">
+    <div class="container">
+      <h2 class="section-title">Install</h2>
+      <p>
+        Download the latest release for Linux. The binary requires
+        <code>libwebkit2gtk-4.1</code> and <code>libgtk-3</code> at runtime.
+      </p>
+      <a class="btn btn-primary" href="https://github.com/extricator/deskOTP/releases/latest">Download Latest Release</a>
+
+      <p style="text-align:center; margin-bottom:1rem; color:var(--muted); font-size:0.9rem;">
+        If runtime libraries are not installed, add them with your package manager:
+      </p>
+      <div class="distro-deps">
+        <div class="distro-block">
+          <h3>Ubuntu / Debian</h3>
+          <pre><code>sudo apt-get install libgtk-3-0 libwebkit2gtk-4.1-0</code></pre>
+        </div>
+        <div class="distro-block">
+          <h3>Fedora / RHEL</h3>
+          <pre><code>sudo dnf install gtk3 webkit2gtk4.1</code></pre>
+        </div>
+        <div class="distro-block">
+          <h3>Arch</h3>
+          <pre><code>sudo pacman -S gtk3 webkit2gtk-4.1</code></pre>
+        </div>
+      </div>
+      <p class="build-link">
+        Prefer to build from source? See the
+        <a href="https://github.com/extricator/deskOTP#build-from-source">build instructions on GitHub</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="https://github.com/extricator/deskOTP/blob/main/LICENSE">GPL-3.0 License</a>
+        <a href="https://github.com/extricator/deskOTP">GitHub</a>
+        <a href="https://github.com/extricator/deskOTP/releases">Releases</a>
+        <a href="https://github.com/extricator/deskOTP/blob/main/CONTRIBUTING.md">Contributing</a>
+        <a href="https://github.com/extricator/deskOTP/blob/main/SECURITY.md">Security</a>
+      </nav>
+      <p class="footer-copy">Copyright 2026 deskOTP contributors.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

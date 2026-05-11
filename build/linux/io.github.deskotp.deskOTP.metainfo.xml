@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.deskotp.deskOTP</id>
+
+  <name>deskOTP</name>
+  <summary>Desktop OTP authenticator with multi-app backup import</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+
+  <description>
+    <p>
+      deskOTP is a desktop authenticator that displays rotating TOTP and HOTP
+      codes. Click any code to copy it to the clipboard, ready to paste.
+      Import your accounts from 16 authenticator apps including Aegis, 2FAS,
+      Google Authenticator, Ente Auth, and more.
+    </p>
+    <p>
+      Features include group organization, issuer icon matching with 800+
+      brand logos, search, and adjustable display density.
+    </p>
+  </description>
+
+  <url type="homepage">https://github.com/extricator/deskOTP</url>
+  <url type="bugtracker">https://github.com/extricator/deskOTP/issues</url>
+
+  <launchable type="desktop-id">io.github.deskotp.deskOTP.desktop</launchable>
+
+  <categories>
+    <category>Utility</category>
+    <category>Security</category>
+  </categories>
+
+  <releases>
+    <release version="0.7.0" date="2026-04-14"/>
+  </releases>
+
+  <content_rating type="oars-1.1"/>
+</component>

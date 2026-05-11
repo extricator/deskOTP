@@ -1,0 +1,39 @@
+build/bin
+node_modules
+frontend/dist
+.claude/
+.codex/
+
+# AI workflow (internal planning)
+.planning/
+
+# Devcontainer (personal bind mounts — sanitize before publishing)
+.devcontainer/
+
+# Flatpak build artifacts
+.flatpak-builder/
+flatpak-build/
+
+# Vite temp files
+*.timestamp-*.mjs
+
+# IDE
+.idea
+
+# Shell dotfiles and git internals leaked into worktree by some tooling
+.bash_profile
+.bashrc
+.gitconfig
+.gitmodules
+.mcp.json
+.profile
+.ripgreprc
+.zprofile
+.zshrc
+HEAD
+config
+/hooks
+objects
+refs
+.agents/
+skills-lock.json

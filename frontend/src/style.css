@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light theme (default) */
+  :root {
+    color-scheme: light;
+    /* Secure Curator palette — RGB triplets for Tailwind opacity modifier support */
+    --color-bg:              248 250 252; /* #f8fafc — slate-50 */
+    --color-surface-lowest:  255 255 255; /* #ffffff */
+    --color-surface-low:     241 245 249; /* #f1f5f9 — slate-100 */
+    --color-surface:         255 255 255; /* #ffffff */
+    --color-surface-hover:   226 232 240; /* #e2e8f0 — slate-200 */
+    --color-surface-active:  203 213 225; /* #cbd5e1 — slate-300 */
+    --color-border:          203 213 225; /* #cbd5e1 — slate-300 */
+    --color-text-primary:     25  28  30; /* #191c1e */
+    --color-text-secondary:   68  70  83; /* #444653 — on-surface-variant */
+    --color-text-muted:      117 118 132; /* #757684 — outline */
+    --color-primary:           0  40 142; /* #00288e */
+    --color-on-primary:      255 255 255; /* #ffffff */
+    --color-primary-container: 30  64 175; /* #1e40af */
+    --color-secondary:         0 108  73; /* #006c49 */
+    --color-tertiary:        112   0  12; /* #70000c */
+    --color-error:           186  26  26; /* #ba1a1a */
+    --color-modal-bg:        255 255 255; /* maps to surface-lowest */
+    --color-input-bg:        241 245 249; /* maps to surface-low (slate-100) */
+    --color-success:           0 108  73; /* reuse secondary */
+    --color-warning:         186  26  26; /* reuse error for urgency */
+
+    /* Typography role tokens — default (Policy: :root = default density)
+       Weight conventions (Inter): body 400, label 500, subheading 600, heading 700
+       Weights applied at component level — sizes defined here */
+    --text-page-title: 1.3125rem;
+    --text-heading: 1.125rem;
+    --text-label:   0.875rem;
+    --text-body:    0.875rem;
+    --text-caption: 0.75rem;
+    --text-code:    1.25rem;
+
+    /* Line-height tokens — default */
+    --lh-page-title: 1.4;
+    --lh-heading: 1.4;
+    --lh-label:   1.4;
+    --lh-body:    1.4;
+    --lh-caption: 1.35;
+    --lh-code:    1.3;
+
+    /* Density spacing tokens — default */
+    --density-card-px:      1rem;
+    --density-card-py:      1rem;
+    --density-card-gap:     0.75rem;
+    --density-section-gap:  2rem;
+
+    /* Density sizing tokens — default */
+    --density-icon-size:    1.125rem;
+    --density-avatar-size:  3rem;
+    --density-navbar-py:    0.75rem;
+    --navbar-height:        3.5rem;
+    --sidebar-width:        16rem;
+  }
+
+  /* Dark theme — activated by .dark on <html> */
+  .dark {
+    color-scheme: dark;
+    /* Secure Curator Dark palette — tonal inversion */
+    --color-bg:               17  19  23; /* #111317 */
+    --color-surface-lowest:   12  14  18; /* #0c0e12 */
+    --color-surface-low:      26  28  32; /* #1a1c20 */
+    --color-surface:          30  32  36; /* #1e2024 */
+    --color-surface-hover:    40  42  46; /* #282a2e */
+    --color-surface-active:   51  53  57; /* #333539 */
+    --color-border:           67  70  82; /* #434652 */
+    --color-text-primary:    226 226 232; /* #e2e2e8 */
+    --color-text-secondary:  196 198 212; /* #c4c6d4 */
+    --color-text-muted:      142 144 157; /* #8e909d */
+    --color-primary:         184 196 255; /* #b8c4ff — Stitch inverse-primary */
+    --color-on-primary:        0  20  83; /* #001453 */
+    --color-primary-container: 23  59 171; /* #173bab */
+    --color-secondary:        78 222 163; /* #4edea3 — Stitch secondary-fixed-dim */
+    --color-tertiary:        255 179 173; /* #ffb3ad — Stitch tertiary-fixed-dim */
+    --color-error:           255 180 171; /* #ffb4ab */
+    --color-modal-bg:         51  53  57; /* maps to surface-active */
+    --color-input-bg:         12  14  18; /* maps to surface-lowest */
+    --color-success:          78 222 163; /* matches secondary */
+    --color-warning:         255 179 173; /* matches tertiary */
+  }
+
+  /* Default density (no data-density attribute) — ~85% of comfortable
+     useDensity.ts removes data-density for "default", so this selector activates.
+     Specificity: html:not([data-density]) (0,1,1) > :root (0,1,0) */
+  html:not([data-density]) {
+    /* === Typography === */
+    --text-page-title: 1.3125rem;
+    --text-heading: 1.125rem;
+    --text-label:   0.875rem;
+    --text-body:    0.875rem;
+    --text-caption: 0.75rem;
+    --text-code:    1.25rem;
+
+    /* === Line-height === */
+    --lh-page-title: 1.4;
+    --lh-heading: 1.4;
+    --lh-label:   1.4;
+    --lh-body:    1.4;
+    --lh-caption: 1.35;
+    --lh-code:    1.3;
+
+    /* === Spacing === */
+    --density-card-px:      1rem;
+    --density-card-py:      1rem;
+    --density-card-gap:     0.75rem;
+    --density-section-gap:  2rem;
+
+    /* === Sizing === */
+    --density-icon-size:    1.125rem;
+    --density-avatar-size:  3rem;
+    --density-navbar-py:    0.75rem;
+    --navbar-height:        3.5rem;
+    --sidebar-width:        16rem;
+  }
+
+  /* Compact density — ~70% of comfortable
+     Code/label ratio: 1.0rem / 0.75rem = 1.33x (requirement: >= 1.3x) */
+  [data-density="compact"] {
+    /* === Typography === */
+    --text-page-title: 1.125rem;
+    --text-heading: 1rem;
+    --text-label:   0.75rem;
+    --text-body:    0.75rem;
+    --text-caption: 0.6875rem;
+    --text-code:    1rem;
+
+    /* === Line-height === */
+    --lh-page-title: 1.3;
+    --lh-heading: 1.25;
+    --lh-label:   1.25;
+    --lh-body:    1.3;
+    --lh-caption: 1.2;
+    --lh-code:    1.2;
+
+    /* === Spacing === */
+    --density-card-px:      0.6rem;
+    --density-card-py:      0.5rem;
+    --density-card-gap:     0.5rem;
+    --density-section-gap:  1rem;
+
+    /* === Sizing === */
+    --density-icon-size:    1rem;
+    --density-avatar-size:  2.25rem;
+    --density-navbar-py:    0.5rem;
+    --navbar-height:        3rem;
+    --sidebar-width:        14rem;
+  }
+
+  /* Comfortable density — spacious layout (current :root values)
+     Activated when user explicitly selects comfortable in settings */
+  [data-density="comfortable"] {
+    /* === Typography === */
+    --text-page-title: 1.5rem;
+    --text-heading: 1.25rem;
+    --text-label:   0.9375rem;
+    --text-body:    0.9375rem;
+    --text-caption: 0.8125rem;
+    --text-code:    1.375rem;
+
+    /* === Line-height === */
+    --lh-page-title: 1.4;
+    --lh-heading: 1.5;
+    --lh-label:   1.5;
+    --lh-body:    1.5;
+    --lh-caption: 1.45;
+    --lh-code:    1.4;
+
+    /* === Spacing === */
+    --density-card-px:      1.2rem;
+    --density-card-py:      1.25rem;
+    --density-card-gap:     1rem;
+    --density-section-gap:  3rem;
+
+    /* === Sizing === */
+    --density-icon-size:    1.25rem;
+    --density-avatar-size:  3.5rem;
+    --density-navbar-py:    0.875rem;
+    --navbar-height:        4rem;
+    --sidebar-width:        18rem;
+  }
+
+  * {
+    font-optical-sizing: auto;
+  }
+
+  /* Theme-switch transition: only active while .theme-transitioning is
+     on <html>.  Keeps scroll compositing free of repaint flicker that
+     a permanent * transition causes in WebView. */
+  .theme-transitioning *,
+  .theme-transitioning *::before,
+  .theme-transitioning *::after {
+    transition-property: background-color, color, border-color, fill, stroke, box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+body {
+  --default-contextmenu: false;
+}
+
+/* Strip native browser select chrome (fixes dark-mode corner artifacts)
+   and provide a custom chevron that works on any background. */
+select.select-card {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23a1a1aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  padding-right: 1.75rem;
+}
+
+@font-face {
+  font-family: "InterVariable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src:
+    local("Inter"),
+    url("assets/fonts/InterVariable.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "ManropeVariable";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src:
+    local("Manrope"),
+    url("assets/fonts/ManropeVariable.woff2") format("woff2-variations");
+}
+
+@layer utilities {
+  .glass {
+    background: rgb(var(--color-surface) / 0.6);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+
+  .glass-panel {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+  }
+  .dark .glass-panel {
+    background: rgba(30, 32, 36, 0.6);
+  }
+  :root:not(.dark) .glass-panel {
+    background: rgba(241, 244, 247, 0.7);
+  }
+
+  #app-content.dialog-blur {
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  .glass-gradient {
+    background: linear-gradient(
+      135deg,
+      rgb(var(--color-primary) / 0.15) 0%,
+      rgb(var(--color-primary-container) / 0.15) 100%
+    );
+  }
+
+  .ghost-border {
+    border: 1px solid rgb(var(--color-border) / 0.15);
+  }
+
+  .card-surface {
+    background-color: rgb(var(--color-surface-lowest));
+    border-radius: 1rem;
+    box-shadow: 0px 12px 32px rgba(25, 28, 30, 0.06);
+  }
+
+  .dark .card-surface {
+    background-color: rgb(var(--color-surface));
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Suppress global * transition inside cards — only the card element
+     itself should transition (it has explicit transition classes).
+     Prevents cascading paint work on hover and per-second tick updates. */
+  .card-surface * {
+    transition: none;
+  }
+
+  /* CountdownBar: pure CSS animation from current scale/color to zero/red.
+     Runs on the GPU compositor — no JS timers or React re-renders needed.
+     The bar element sets inline transform, backgroundColor, and animationDuration. */
+  .countdown-bar {
+    will-change: transform;
+    animation: countdown-shrink linear forwards;
+  }
+
+  @keyframes countdown-shrink {
+    to {
+      transform: scaleX(0);
+      background-color: var(--countdown-end-bg, rgb(186, 26, 26));
+    }
+  }
+}

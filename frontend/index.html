@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>deskotp</title>
+    <script>
+      // FOWT prevention: apply theme before first paint
+      // Must be synchronous (no defer/async) and in <head>
+      (function () {
+        var s = localStorage.getItem("theme");
+        var dark =
+          s === "dark" ||
+          (!s && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+    <script>
+      // FOWT prevention: apply density before first paint
+      // Must be synchronous (no defer/async) and in <head>
+      (function () {
+        var d = localStorage.getItem("density");
+        if (d === "compact" || d === "comfortable") {
+          document.documentElement.setAttribute("data-density", d);
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="/src/assets/images/app-icon.png" />
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script src="./src/main.tsx" type="module"></script>
+  </body>
+</html>

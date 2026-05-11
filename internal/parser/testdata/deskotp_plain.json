@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "header": {
+    "slots": null,
+    "params": null
+  },
+  "db": {
+    "version": 1,
+    "deskotp_version": 1,
+    "entries": [
+      {
+        "type": "totp",
+        "uuid": "aaaaaaaa-0001-0001-0001-aaaaaaaaaaaa",
+        "name": "Alice",
+        "issuer": "GitHub",
+        "note": "work account",
+        "favorite": false,
+        "icon": null,
+        "icon_mime": null,
+        "groups": [],
+        "info": {
+          "secret": "JBSWY3DPEHPK3PXP",
+          "algo": "SHA1",
+          "digits": 6,
+          "period": 30
+        },
+        "x-deskotp": {
+          "icon_slug": "github",
+          "usage_count": 42,
+          "group": "Work"
+        }
+      },
+      {
+        "type": "totp",
+        "uuid": "bbbbbbbb-0002-0002-0002-bbbbbbbbbbbb",
+        "name": "Bob",
+        "issuer": "Google",
+        "note": "",
+        "favorite": false,
+        "icon": null,
+        "icon_mime": null,
+        "groups": [],
+        "info": {
+          "secret": "4SJHB4GSD43FZBAI7C2HLRJGPQ",
+          "algo": "SHA256",
+          "digits": 8,
+          "period": 60
+        },
+        "x-deskotp": {}
+      }
+    ]
+  }
+}
