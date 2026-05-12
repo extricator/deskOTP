@@ -71,7 +71,9 @@ jobs:
             deskOTP-${VERSION}-x86_64.flatpak io.github.deskotp.deskOTP
 
       - name: Generate SHA256SUMS
-        run: sha256sum build/bin/deskOTP *.deb *.rpm *.flatpak > SHA256SUMS
+        run: |
+          sha256sum build/bin/deskOTP *.deb *.rpm *.flatpak > SHA256SUMS
+          sed -i 's|build/bin/||' SHA256SUMS
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3

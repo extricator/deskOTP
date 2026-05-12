@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-05-12
+
+### Fixed
+
+- `SHA256SUMS` manifest now lists the `deskOTP` binary by its basename instead of the in-CI build path `build/bin/deskOTP`. The published hash in v0.7.0 was already correct; only the filename token was wrong, which caused the canonical `sha256sum -c SHA256SUMS` verification to fail on the binary line. No application code changed.
+
 ## [0.7.0] - 2026-XX-XX
 
 <!-- TODO: Replace XX-XX with the actual release date -->
@@ -34,5 +40,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - App lock with system authentication integration (xdg-desktop-portal on Linux)
 - Master password protection with configurable auto-lock timeout
 
-[Unreleased]: https://github.com/extricator/deskOTP/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/extricator/deskOTP/compare/v0.7.1...HEAD
+[0.7.1]: https://github.com/extricator/deskOTP/releases/tag/v0.7.1
 [0.7.0]: https://github.com/extricator/deskOTP/releases/tag/v0.7.0
