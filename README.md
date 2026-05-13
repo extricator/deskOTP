@@ -4,9 +4,7 @@
 [![Build](https://github.com/extricator/deskOTP/actions/workflows/ci.yml/badge.svg)](https://github.com/extricator/deskOTP/actions)
 [![Release](https://img.shields.io/github/v/release/extricator/deskOTP)](https://github.com/extricator/deskOTP/releases/latest)
 
-<!-- screenshot: main-view -->
-<!-- screenshot: import-flow -->
-<!-- TODO: Replace these comments with actual screenshot images before publishing -->
+![deskOTP main view](docs/screenshots/hero-light.png)
 
 deskOTP is a cross-platform desktop OTP authenticator that imports backup files from phone authenticator apps and displays rotating codes on your desktop. It targets Linux primarily, with macOS and Windows also supported. It is not a mobile app — it is a desktop citizen built for the kind of person who has a terminal always open.
 
@@ -56,6 +54,8 @@ TOTP, HOTP, and Steam Guard
 - Manual entry
 - Paste an `otpauth://` URI
 
+![Add token entry points](docs/screenshots/add-token-modal.png)
+
 ### Interface
 
 - Material Design 3 with dark and light themes
@@ -63,6 +63,11 @@ TOTP, HOTP, and Steam Guard
 - Drag-and-drop account reordering
 - Search and multi-criteria sort
 - Click-to-copy codes
+
+<p align="center">
+  <img src="docs/screenshots/hero-light.png" width="48%" alt="Light theme">
+  <img src="docs/screenshots/hero-dark.png" width="48%" alt="Dark theme">
+</p>
 
 ### Icons
 
