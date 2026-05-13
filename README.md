@@ -128,6 +128,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for build instructions, code style, and P
 
 To report a security vulnerability, see [SECURITY.md](SECURITY.md).
 
+## Acknowledgments
+
+Special thanks to [Aegis Authenticator](https://github.com/beemdevelopment/Aegis) — deskOTP isn't a fork, but Aegis was the reference for the encrypted backup format parser, and deskOTP's backup format extends the Aegis JSON schema for round-trip compatibility. See [CREDITS.md](CREDITS.md) for the full list.
+
 ## License
 
 This project is licensed under the [GNU General Public License v3.0](LICENSE).

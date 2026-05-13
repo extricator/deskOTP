@@ -8,6 +8,16 @@ deskOTP bundles brand logo SVGs from [aegis-icons](https://github.com/aegis-icon
 
 **Trademark notice:** Brand logos included in this distribution are trademarks of their respective owners. They are used solely to identify the corresponding service within this application and do not imply any affiliation with or endorsement by those trademark owners.
 
+## Special Thanks
+
+deskOTP is not a fork of [Aegis Authenticator](https://github.com/beemdevelopment/Aegis), but it owes a lot to it. The Aegis project — its source code, its documented backup format, and the care its maintainers put into both — was the primary reference throughout deskOTP's development:
+
+- The encrypted backup format parser (AES-256-GCM, scrypt KDF, slot-based master key) was implemented against Aegis as the reference implementation.
+- deskOTP's own backup format is an extension of the Aegis JSON schema (`x-deskotp` namespace) so vaults can round-trip between the two apps.
+- Format detection, naming conventions, and the overall import flow took cues from Aegis.
+
+This credit is distinct from the [aegis-icons](https://github.com/aegis-icons/aegis-icons) credit above — different upstream, different scope. Thank you to the Aegis maintainers and contributors for making this work tractable.
+
 ## Frameworks and Libraries
 
 - [Wails](https://wails.io/) — MIT License — Go/JavaScript desktop application framework
